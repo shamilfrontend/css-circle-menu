@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.menu {
+    margin: 50px 0;
+}
+
+.menu__list {
+    width: 260px;
+    height: 260px;
+    padding: 0;
+    margin: 0 auto;
+    list-style-type: none;
+    position: relative;
+    border: 3px solid #d4d4d4;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.menu__item {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    width: 140px;
+    height: 140px;
+    left: -10px;
+    top: -10px;
+    transform-origin: 100% 100%;
+    overflow: hidden;
+}
+.menu__item:nth-child(1) {
+    transform: rotate(0deg) skew(30deg);
+}
+.menu__item:nth-child(1) .menu__img {
+    transform: translate(-50%, -50%) rotate(270deg);
+}
+.menu__item:nth-child(2) {
+    transform: rotate(60deg) skew(30deg);
+}
+.menu__item:nth-child(2) .menu__img {
+    transform: translate(-50%, -50%) rotate(210deg);
+}
+.menu__item:nth-child(3) {
+    transform: rotate(120deg) skew(30deg);
+}
+.menu__item:nth-child(3) .menu__img {
+    transform: translate(-50%, -50%) rotate(150deg);
+}
+.menu__item:nth-child(4) {
+    transform: rotate(180deg) skew(30deg);
+}
+.menu__item:nth-child(4) .menu__img {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+.menu__item:nth-child(5) {
+    transform: rotate(240deg) skew(30deg);
+}
+.menu__item:nth-child(5) .menu__img {
+    transform: translate(-50%, -50%) rotate(30deg);
+}
+.menu__item:nth-child(6) {
+    transform: rotate(300deg) skew(30deg);
+}
+.menu__item:nth-child(6) .menu__img {
+    transform: translate(-50%, -50%) rotate(-30deg);
+}
+
+.menu__item:hover .menu__link {
+    background-color: #eeeeee;
+}
+
+.menu__link {
+    display: block;
+    background-color: #ffffff;
+    position: relative;
+    width: 140px;
+    height: 140px;
+    margin-top: 25px;
+    margin-left: 35px;
+    transition: .5s;
+    transform: rotate(0deg) skew(-30deg);
+}
+
+.menu__img {
+    width: 55px;
+    display: block;
+    position: absolute;
+    left: 46%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+}
