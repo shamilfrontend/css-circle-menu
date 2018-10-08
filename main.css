@@ -20,14 +20,27 @@ body {
     margin: 0 auto;
     list-style-type: none;
     position: relative;
-    border: 3px solid #d4d4d4;
+    border: 3px solid #1182ee;
     border-radius: 50%;
     overflow: hidden;
 }
 
+.menu__list:after {
+    content: '';
+    background-color: #1182ee;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
 .menu__item {
     position: absolute;
-    border: 1px solid #d4d4d4;
+    border: 1px solid #1182ee;
     width: 140px;
     height: 140px;
     left: -10px;
@@ -35,36 +48,42 @@ body {
     transform-origin: 100% 100%;
     overflow: hidden;
 }
+
 .menu__item:nth-child(1) {
     transform: rotate(0deg) skew(30deg);
 }
 .menu__item:nth-child(1) .menu__img {
     transform: translate(-50%, -50%) rotate(270deg);
 }
+
 .menu__item:nth-child(2) {
     transform: rotate(60deg) skew(30deg);
 }
 .menu__item:nth-child(2) .menu__img {
     transform: translate(-50%, -50%) rotate(210deg);
 }
+
 .menu__item:nth-child(3) {
     transform: rotate(120deg) skew(30deg);
 }
 .menu__item:nth-child(3) .menu__img {
     transform: translate(-50%, -50%) rotate(150deg);
 }
+
 .menu__item:nth-child(4) {
     transform: rotate(180deg) skew(30deg);
 }
 .menu__item:nth-child(4) .menu__img {
     transform: translate(-50%, -50%) rotate(90deg);
 }
+
 .menu__item:nth-child(5) {
     transform: rotate(240deg) skew(30deg);
 }
 .menu__item:nth-child(5) .menu__img {
     transform: translate(-50%, -50%) rotate(30deg);
 }
+
 .menu__item:nth-child(6) {
     transform: rotate(300deg) skew(30deg);
 }
@@ -73,7 +92,7 @@ body {
 }
 
 .menu__item:hover .menu__link {
-    background-color: #eeeeee;
+    background-color: #1182ee;
 }
 
 .menu__link {
